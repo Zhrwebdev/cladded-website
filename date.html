@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Include your CSS and other scripts here -->
+</head>
+<body>
+    <!-- Your website content goes here -->
+
+    <!-- Live Date Section -->
+    <section id="live-date">
+        <h2>Current Date and Time</h2>
+        <p id="date-time"></p>
+    </section>
+
+    <!-- Your website's other sections and content go here -->
+
+    <!-- Include your footer -->
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <!-- JavaScript to display live date -->
+    <script>
+        // Function to update the live date and time
+        function updateDateTime() {
+            const now = new Date();
+            const dateTimeString = now.toLocaleString(); // Customize the format if needed
+            document.getElementById("date-time").textContent = dateTimeString;
+        }
+
+        // Update the date and time every second (1000 milliseconds)
+        setInterval(updateDateTime, 1000);
+
+        // Initial update
+        updateDateTime();
+    </script>
+</body>
+</html>
