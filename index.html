@@ -199,43 +199,22 @@
         <div style="border: 4mm ridge rgba(69, 80, 83, 0.6); padding: 5%; background-color: rgb(68, 53, 92); border-radius: 10%;">
           <h2>Contact Us</h2>
           <p>Feel free to get in touch with us using the form below:</p>
-          <form action="https://formspree.io/f/meqbzgqa" method="post">
-            <table>
-              <tr>
-                <td>
-                  First Name:
-                </td>
-                <td>
-                  <input type="text" name="fname">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Last Name:
-                </td>
-                <td>
-                  <input type="text" name="lname">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Email Address:
-                </td>
-                <td>
-                  <input type="text" name="email">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Message:
-                </td>
-                <td>
-                  <input type="text" placeholder="Type your message" name="message">
-                </td>
-              </tr>  
-            </table>
-            <input class="submit" type="submit" value="submit">
+          <form
+            action="https://formspree.io/f/meqbzgqa"
+            method="POST"
+          >
+            <label>
+              Your email:
+              <input type="email" name="email">
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
           </form>
+          
         </div>
       </div>
 
