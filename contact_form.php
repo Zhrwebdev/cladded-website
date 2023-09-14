@@ -31,7 +31,7 @@ if (isset($_SESSION["form_success"]) && $_SESSION["form_success"] === true) {
 }
 ?>
 
-<div>
+    <div>
         <div style="border: 4mm ridge rgba(69, 80, 83, 0.6); padding: 5%; background-color: rgb(68, 53, 92); border-radius: 10%;">
           <h2>Contact Us</h2>
           <p>Feel free to get in touch with us using the form below:</p>
@@ -81,4 +81,4 @@ if (isset($_SESSION["form_success"]) && $_SESSION["form_success"] === true) {
           }
           ?>
         </div>
-      </div>
+    </div>
