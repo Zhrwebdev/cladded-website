@@ -81,3 +81,38 @@ textarea {
       align-items: center; /* Center both columns horizontally */
   }
 }
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    max-width: 100%;
+  }
+  .carousel-inner {
+    max-height: 400px; /* Set an appropriate max-height for mobile */
+  }
+  .carousel-caption {
+    text-align: center; /* Center text in smaller screens */
+  }
+  .carousel-caption h5 {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+  .carousel-caption p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 599px) {
+  .people.feature.col {
+    flex-basis: 100%; /* One column per row on small screens */
+  }
+}
+@media (min-width: 600px) and (max-width: 999px) {
+  .people.feature.col {
+    flex-basis: 50%; /* Two columns per row on medium screens */
+  }
+}
+@media (min-width: 1000px) {
+  .people.feature.col {
+    flex-basis: 25%; /* Four columns per row on large screens */
+  }
+}
+
+
